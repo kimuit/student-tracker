@@ -1,6 +1,5 @@
-import {  Table } from 'antd';
+import { Table } from 'antd';
 import studentData from './util/studentData';
-
 
 const columns = [
   {
@@ -21,7 +20,7 @@ const columns = [
   {
     title: 'email',
     dataIndex: 'email',
-    key: 'email'
+    key: 'email',
   },
   {
     title: 'gender',
@@ -29,11 +28,7 @@ const columns = [
     key: 'gender',
   },
 ];
- 
-export default function StudentTable () {
-return (
-<Table dataSource={studentData()} columns={columns} />
-)
+
+export default function StudentTable() {
+  return <Table dataSource={studentData()} columns={columns} />;
 }
-
-
