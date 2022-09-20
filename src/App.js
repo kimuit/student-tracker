@@ -1,17 +1,15 @@
+import  Container  from './Container';
 import './App.css';
-import Container  from './Container';
+import StudentTable  from './StudentTable';
 import NavBar from './NavBar';
-import StudentTable from './StudentTable';
-
-
 
 function App() {
   return (
     <Container>
       <div>
-        <NavBar />
+      <NavBar/>
       </div>
-      {/* <StudentTable /> */}
+      <StudentTable/>
     </Container>
   );
 }
